@@ -1,4 +1,4 @@
-import chartJs from 'chart.js';
+import Chart from 'chart.js';
 
 import { kurssitietokanta } from './data/courses';
 import {
@@ -16,9 +16,6 @@ import {
 import { average, sum } from './utils/numberUtils';
 import { toLowerCase } from './utils/stringUtils';
 import { isArray, isFloat, isTruthy } from './utils/validators';
-
-// STOP SEIS MAYDAY SOS
-const Chart = chartJs;
 
 const setDuplikaattiKurssit = setLocalStorage<string[]>('duplikaattiKurssit');
 const setPerusOpinnot = setLocalStorage<string[]>('perusOpinnot');
